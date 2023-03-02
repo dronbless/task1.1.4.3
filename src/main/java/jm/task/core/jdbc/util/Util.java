@@ -18,7 +18,6 @@ public class Util {
             DriverManager.registerDriver(driver);
 
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            connection.setAutoCommit(false);
             if (!connection.isClosed()) {
                 System.out.println("Соединение с БД установлено");
             }
